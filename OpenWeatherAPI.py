@@ -90,10 +90,3 @@ class CurrentWeatherRequest:
         if self.simpleInfo == True:
             response = self.simpleInfoParser(response)
         return response
-    
-myAPI = CurrentWeatherRequest(apiKeyGlobal)
-
-#myCall = myAPI.byBox(12,15,32,37) #we use this because theres a well defined and well sized output
-myCall = myAPI.byZipCode(10001)
-
-print(myCall)
